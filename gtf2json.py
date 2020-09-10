@@ -20,5 +20,5 @@ for each_line_of_text in fileinput.input(my_gene_file):
     Homo_sapiens = {"geneName":geneName, "chr":chro, "startPos":startPos, "endPos":endPos}
     dataset.append(Homo_sapiens)
 
-j = json.dumps(dataset)
+j = json.dumps(dataset, indent=1)
 print(j)
